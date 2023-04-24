@@ -13,7 +13,9 @@
 
   <body>
     <%= render 'layouts/navbar'%>
-    <%= render 'layouts/devise_flash' %>
-    <%= yield %>
+    <div class="container">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </div>
   </body>
 </html>
